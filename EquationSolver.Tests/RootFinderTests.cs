@@ -206,7 +206,9 @@ namespace EquationSolver.Tests
             AssertQuartic(new[]
             {
                 (2.0, -41.0, -42.0, 360.0, (Real(-6.0), Real(-4.0), Real(3.0), Real(5.0))),
-                (0.0, -5.0, 0.0, 4.0, (Real(-2.0), Real(-1.0), Real(1.0), Real(2.0)))
+                (0.0, -5.0, 0.0, 4.0, (Real(-2.0), Real(-1.0), Real(1.0), Real(2.0))),
+                (0.0, -15000.0, 0.0, 100.0, (Real(-Math.Sqrt(7500.0 - 10 * Math.Sqrt(562499.0))), Real(Math.Sqrt(7500.0 - 10 * Math.Sqrt(562499.0))), Real(-Math.Sqrt(10.0 * (750.0 + Math.Sqrt(562499.0)))), Real(Math.Sqrt(10.0 * (750.0 + Math.Sqrt(562499.0)))))),
+                (0.0, -28800.0, 0.0, 140.0, (Real(-Math.Sqrt((144000.0+Math.Sqrt(144000.0*144000.0-14000.0))/10.0)), Real(Math.Sqrt((144000.0+Math.Sqrt(144000.0*144000.0-14000.0))/10.0)), Real(-Math.Sqrt((144000.0-Math.Sqrt(144000.0*144000.0-14000.0))/10.0)), Real(Math.Sqrt((144000.0-Math.Sqrt(144000.0*144000.0-14000.0))/10.0))))
             });
         }
 
